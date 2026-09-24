@@ -1,0 +1,17 @@
+# Materiais de trabalho e referências locais
+.review/
+Design_reference/
+Onbording/
+
+# Imagens originais pesadas; a página usa as versões WebP em assets/img/web/
+assets/img/*.jpeg
+assets/img/*.jpg
+assets/img/*.png
+assets/img/*.PNG
+assets/img/LEIAME.txt
+
+# Arquivos do sistema e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
