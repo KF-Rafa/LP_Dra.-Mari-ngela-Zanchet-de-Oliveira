@@ -27,7 +27,7 @@
       if (event.key === "Escape" && header.classList.contains("nav-open")) { setOpen(false); toggle.focus(); }
     });
     document.addEventListener("click", function (event) { if (!header.contains(event.target)) setOpen(false); });
-    window.matchMedia("(max-width: 960px)").addEventListener("change", function () { setOpen(false); });
+    window.matchMedia("(max-width: 1200px)").addEventListener("change", function () { setOpen(false); });
   }
   var floatingLink = document.getElementById("waFloat");
   var hero = document.getElementById("topo");

@@ -28,7 +28,9 @@ Sequência baseada em `Onbording/HEADER Leading Page.docx`: apresentação, dife
 
 Foram removidos régua lateral, animações de entrada, molduras irregulares, selos sobrepostos e repetição dos cartões de recursos. Os textos foram simplificados e as imagens artificiais 3/4/5 deixaram de ser exibidas. Fotos reais 1/2/6/7 estão preservadas e têm versões leves para a web.
 
-Paleta mantida: rosa `#C9929B`, off-white `#FAF7F5`, bege `#E2D3CE`, taupe `#6F5E5E`. A superfície clara mistura 50% de bege e 50% de off-white para oferecer contraste de 4,93:1 com taupe. Botões taupe/off-white têm contraste de 5,73:1.
+Fundos de destaque em rosa envelhecido `#C9929B`, alternados com off-white `#FAF7F5`. Os textos usam taupe `#6F5E5E` sobre off-white e taupe escuro `#3F3333` sobre rosa. O botão flutuante do WhatsApp tem fundo off-white, texto, ícone e borda rosa, conforme a referência enviada.
+
+Ajustes de 25/09/2026: textos corridos ampliados para 18 px, links e legendas maiores, títulos e menu redimensionados. Acrescentado o segundo endereço: Rua José de Alencar, 386, sala 407, Menino Deus, Porto Alegre, RS, com atendimento em dias específicos e agendamento prévio. Horários, estacionamento e acessibilidade da Raro permanecem identificados separadamente.
 
 As duas referências locais, Nadia e Sabrina, orientaram a hierarquia, presença de fotografias reais, navegação curta e informação de localização. Nenhuma imagem ou alegação clínica foi copiada dessas páginas.
 
