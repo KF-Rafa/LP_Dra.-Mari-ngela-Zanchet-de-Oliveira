@@ -29,7 +29,7 @@ h3 { font-size: 1.5rem; line-height: 1.4; font-weight: 600; letter-spacing: -.02
 .eyebrow { font-size: 0.875rem; font-weight: 600; line-height: 1.6; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 20px; }
 .btn { max-width: 100%; text-align: center; display: inline-flex; justify-content: center; align-items: center; gap: 16px; background: var(--paper); color: var(--ink); padding: 16px 23px; min-height: 48px; border: 2px solid var(--rose); border-radius: 5px; text-decoration: none; font-size: 1.125rem; font-weight: 600; line-height: 1.4; transition: background .18s, color .18s; }
 .btn:hover { background: var(--rose); color: var(--on-rose); }
-.btn span { font-size: 1.5rem; font-weight: 400; line-height: 1; }
+.arrow-up-right { width: 1em; height: 1em; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; vertical-align: -.12em; }
 .text-link { display: inline-flex; align-items: baseline; gap: 12px; font-size: 1.125rem; font-weight: 600; line-height: 1.65; text-decoration-thickness: 1px; }
 .text-link:hover { text-decoration-thickness: 2px; }
 .text-link span { text-decoration: none; }
@@ -47,7 +47,7 @@ h3 { font-size: 1.5rem; line-height: 1.4; font-weight: 600; letter-spacing: -.02
 .nav__cta { padding: 13px 17px; font-size: 1rem; gap: 12px; }
 .nav-toggle { display: none; }
 /* A fotografia real é o elemento principal da abertura. */
-.hero { padding-block: 62px 68px; background: var(--surface); color: var(--on-rose); }
+.hero { padding-block: 62px 68px; background: var(--paper); color: var(--ink); }
 .hero__grid { display: grid; grid-template-columns: .95fr 1.15fr; align-items: center; gap: 64px; }
 .hero .eyebrow { max-width: 330px; }
 .hero h1 { max-width: 12ch; }
@@ -241,9 +241,9 @@ h3 { font-size: 1.5rem; line-height: 1.4; font-weight: 600; letter-spacing: -.02
 /* Colunas acomodam a tipografia ampliada sem forçar rolagem horizontal. */
 .hero__grid > *, .split > *, .section-heading > *, .treatments__grid > *,
 .consultation__grid > *, .location__grid > *, .resources > * { min-width: 0; }
-.btn span, .text-link span, .wa-float svg { flex-shrink: 0; }
+.text-link span, .wa-float svg { flex-shrink: 0; }
 .hero__portrait figcaption { background: var(--paper); color: var(--ink); padding: 16px; border-radius: 5px; }
-.hero .btn, .consultation .btn { border-color: var(--paper); }
+.consultation .btn { border-color: var(--paper); }
 .wa-float:hover { border-color: var(--ink); }
 @media (max-width: 850px) and (min-width: 681px) {
   .treatments__grid { grid-template-columns: 1fr; gap: 36px; }
