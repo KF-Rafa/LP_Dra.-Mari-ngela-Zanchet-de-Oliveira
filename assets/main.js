@@ -25,10 +25,27 @@
 
   /* ---------- header: estado ao rolar ---------- */
   var header = document.getElementById("siteHeader");
+  var lastHeaderScroll = Math.max(0, window.scrollY);
   var onScrollHeader = function () {
     if (!header) return;
-    header.classList.toggle("is-scrolled", window.scrollY > 8);
+    var maxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+    var scrollY = Math.max(0, Math.min(window.scrollY, maxScroll));
+    var delta = scrollY - lastHeaderScroll;
+    header.classList.toggle("is-scrolled", scrollY > 8);
+    if (scrollY <= header.offsetHeight || header.classList.contains("nav-open") || header.querySelector(":focus-visible")) {
+      header.classList.remove("is-hidden");
+    } else if (Math.abs(delta) >= 8) {
+      header.classList.toggle("is-hidden", delta > 0);
+    } else {
+      return;
+    }
+    lastHeaderScroll = scrollY;
   };
+  if (header) {
+    header.addEventListener("focusin", function () {
+      header.classList.remove("is-hidden");
+    });
+  }
   onScrollHeader();
 
   /* ---------- menu mobile ---------- */
@@ -37,6 +54,7 @@
   if (navToggle && header) {
     navToggle.addEventListener("click", function () {
       var open = header.classList.toggle("nav-open");
+      header.classList.remove("is-hidden");
       navToggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
     if (nav) {

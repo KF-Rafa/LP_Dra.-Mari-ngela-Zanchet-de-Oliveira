@@ -185,8 +185,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid transparent;
-  transition: border-color .25s ease, background-color .25s ease;
+  transition: transform .25s ease, border-color .25s ease, background-color .25s ease;
 }
+.site-header.is-hidden { transform: translateY(-100%); }
 .site-header.is-scrolled {
   border-bottom-color: var(--line);
   background: color-mix(in srgb, var(--paper) 94%, transparent);
@@ -301,8 +302,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 
 .hero__lead {
-  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
-  color: var(--ink-soft);
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--ink);
   max-width: 42ch;
 }
 .hero__actions {
@@ -314,9 +316,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .hero__aside { position: relative; }
 .hero__badge {
-  position: absolute;
-  right: -.4rem;
-  bottom: 1.6rem;
+  position: static;
+  margin-top: 1rem;
   background: var(--teal);
   color: var(--paper);
   border-radius: var(--radius);
@@ -325,15 +326,17 @@ button { font: inherit; color: inherit; cursor: pointer; }
   align-items: center;
   gap: .7rem;
   box-shadow: 0 20px 40px -20px rgba(30,58,58,.55);
-  max-width: 14rem;
+  width: 100%;
 }
 .hero__badge-num {
+  flex: 1;
   font-family: var(--font-display);
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1;
 }
 .hero__badge-txt {
+  flex: 1.2;
   font-family: var(--font-mono);
   font-size: .62rem;
   letter-spacing: .12em;
@@ -670,18 +673,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
   gap: clamp(1.25rem, 3vw, 2rem);
 }
 .consulta__bloco {
-  color: var(--ink);
-  background: rgba(255,255,255,.35);
+  color: var(--coral-deep);
+  background: var(--paper);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: clamp(1.5rem, 3vw, 2rem);
   display: flex;
   flex-direction: column;
   gap: .9rem;
-}
-.consulta__bloco--accent {
-  background: var(--coral);
-  color: #fff;
 }
 .consulta__label {
   font-family: var(--font-mono);
@@ -700,7 +699,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .consulta__bloco p,
 .consulta__bloco li {
-  color: var(--ink-soft);
+  color: var(--coral-deep);
   font-size: 1rem;
 }
 .consulta__bloco ul {
@@ -717,10 +716,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .section--butter .growth__intro,
 .section--butter .stop__age,
 .section--butter .stop__age small,
-.section--butter .stop__content p,
-.consulta__bloco--accent p,
-.consulta__bloco--accent li,
-.consulta__bloco--accent li::marker { color: #fff; }
+.section--butter .stop__content p { color: #fff; }
 .section--butter .cards { background: var(--coral); }
 
 /* =============================================================
@@ -1136,7 +1132,7 @@ html.treatment-dialog-open { overflow: hidden; }
   .hero__grid, .differential__grid, .about__grid { gap: 1.75rem; }
   .hero__title { font-size: clamp(2rem, 8.5vw, 2.5rem); line-height: 1.12; text-wrap: pretty; }
   .hero__subtitle { font-size: 1.125rem; font-weight: 500; line-height: 1.5; margin-bottom: 1rem; }
-  .hero__lead { font-size: 1rem; line-height: 1.65; max-width: none; }
+  .hero__lead { font-size: 1.125rem; line-height: 1.5; max-width: none; }
   .hero__actions { flex-direction: column; gap: .75rem; margin-top: 1.5rem; }
   .btn { max-width: 100%; justify-content: center; text-align: center; font-size: .875rem; padding-inline: 1.1rem; }
   .hero__actions .btn { width: 100%; }
