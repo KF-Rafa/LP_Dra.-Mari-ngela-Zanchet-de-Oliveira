@@ -12,6 +12,12 @@ python -m http.server 8765 --bind 127.0.0.1
 
 Endereço local: http://127.0.0.1:8765
 
+## Cartão digital para a bio do Instagram
+
+Abra `bio.html` (ou http://127.0.0.1:8765/bio.html). Após publicar, use o endereço do site seguido de `/bio.html` na bio do Instagram. A página usa `assets/bio.css` e a fotografia já existente no projeto.
+
+Os cinco botões levam ao WhatsApp, à apresentação da Dra. no site, à localização da clínica, ao Google e ao Instagram. O botão de avaliação abre uma busca pela clínica no Google Maps; substitua seu endereço pelo link direto de avaliação quando a clínica fornecer. Não é necessário JavaScript.
+
 `dra-mariangela-zanchet-preview.html` é uma cópia compartilhável com CSS, JavaScript e imagens embutidos. Para atualizá-la após editar o site, execute `python scripts/build_preview.py`. As fontes Montserrat usam Google Fonts; sem internet, a página usa Arial.
 
 ## Arquivos
