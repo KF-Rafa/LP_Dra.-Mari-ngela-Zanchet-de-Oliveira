@@ -57,12 +57,13 @@ h1 span { display: block; }
 .link__icon { width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .link strong { display: block; font-size: 12px; font-weight: 600; line-height: 1.5; }
 .link small { display: block; margin-top: 3px; font-size: 10px; line-height: 1.5; }
-.link__arrow { font-size: 23px; font-family: Arial, sans-serif; font-weight: 400; }
+.link__arrow, .footer__arrow { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.link__arrow { width: 18px; height: 18px; }
 .link--primary { background: var(--rose-dark); border-color: var(--rose-dark); color: var(--white); }
 .footer { margin-top: 25px; text-align: center; font-size: 10px; line-height: 1.9; }
 .footer p { margin: 0 0 13px; }
 .footer a { display: inline-block; padding: 8px; font-weight: 600; text-underline-offset: 4px; }
-.footer a span { margin-left: 5px; }
+.footer__arrow { display: inline-block; width: 13px; height: 13px; margin-left: 5px; vertical-align: -2px; }
 @media (hover: hover) {
   .link:hover { transform: translateY(-2px); border-color: var(--rose); background: var(--paper); }
   .link--primary:hover { background: var(--ink); border-color: var(--ink); }
