@@ -6,7 +6,7 @@
    ============================================================= */
 
 :root {
-  --paper:       #FAF7F5;
+  --paper:       #F2EADD;   /* referência assets/img/cor_fundo.jpeg */
   --paper-2:     #E2D3CE;   /* bege suave */
   --ink:         #6F5E5E;   /* taupe */
   --ink-soft:    #7D6A6A;
@@ -755,7 +755,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   font-size: var(--step-h3);
   line-height: 1.18;
 }
-.tratamentos .card h3 { color: var(--coral); font-size: 2.2rem; }
+.tratamentos .card h3 { color: var(--coral); font-size: clamp(1.5rem, 3vw, 2.2rem); }
 .card p { font-size: .95rem; color: var(--ink-soft); flex: 1; }
 .card__link {
   margin-top: .4rem;
@@ -767,7 +767,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   transition: color .18s ease, transform .18s ease;
 }
 .card__link:hover { color: var(--coral-deep); }
-.tratamentos .card__link { font-size: 1.5rem; }
+.tratamentos .card__link { font-size: clamp(.875rem, 1.6vw, 1.25rem); }
 .treatment-more { background: none; border: 0; padding: 0; text-align: left; align-self: flex-start; }
 html.treatment-dialog-open { overflow: hidden; }
 .treatment-dialog {
@@ -806,6 +806,11 @@ html.treatment-dialog-open { overflow: hidden; }
   height: 192px;
   object-fit: cover;
 }
+.cards--additional .card h3 { font-size: clamp(1.5rem, 2.5vw, 2rem); }
+.card__description { flex: 1; }
+.card__description p + p { margin-top: .75rem; }
+.cards--additional .card__media img { height: auto; aspect-ratio: 1; }
+.tratamentos .card__link { min-height: 44px; display: inline-flex; align-items: center; gap: .35rem; }
 
 /* =============================================================
    DEPOIMENTOS
