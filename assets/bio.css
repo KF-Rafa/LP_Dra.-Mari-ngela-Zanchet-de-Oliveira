@@ -55,8 +55,8 @@ h1 span { display: block; }
   transition: background-color .18s ease, border-color .18s ease, transform .18s ease;
 }
 .link__icon { width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-.link strong { display: block; font-size: 12px; font-weight: 600; line-height: 1.5; }
-.link small { display: block; margin-top: 3px; font-size: 10px; line-height: 1.5; }
+.link strong { display: block; font-size: 16px; font-weight: 600; line-height: 1.5; }
+.link small { display: block; margin-top: 3px; font-size: 13px; line-height: 1.5; }
 .link__arrow, .footer__arrow { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .link__arrow { width: 18px; height: 18px; }
 .link--primary { background: var(--rose-dark); border-color: var(--rose-dark); color: var(--white); }
@@ -75,7 +75,7 @@ h1 span { display: block; }
 @media (max-width: 359px) {
   .bio { padding-inline: 16px; }
   .link { gap: 11px; padding-inline: 13px; }
-  .link strong { font-size: 11px; }
+  .link strong { font-size: 15px; }
   .profile__intro { font-size: 9px; }
 }
 @media (prefers-reduced-motion: reduce) {
